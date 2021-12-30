@@ -2,10 +2,36 @@ h1 {
   text-align: center;
 }
 
+.instructions {
+  text-align: center;
+}
+
+.selectButtons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.xbutton {
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+.obutton {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+
 .square {
+  content: "";
   background-color: white;
   border: 3px solid black;
   display: flex;
+}
+
+.squarewithX {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
 .board {
@@ -17,4 +43,5 @@ h1 {
     3,
     33.333%
   ); /* each column fills 1/3 of container */
+  margin-top: 100px;
 }
